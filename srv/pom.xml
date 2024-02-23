@@ -49,6 +49,16 @@
 			<groupId>com.sap.cloud.sdk.datamodel</groupId>
 			<artifactId>openapi-core</artifactId>
 		</dependency>
+
+		<!-- <dependency>
+			<groupId>com.sap.cloud.sdk.cloudplatform</groupId>
+			<artifactId>connectivity-destination-service</artifactId>
+			<version>5.4.0</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.sap.cloud.sdk.cloudplatform</groupId>
+			<artifactId>scp-cf</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -154,12 +164,31 @@
 				</executions>
 				<configuration>
 					<inputSpec>${project.basedir}/api-specs/AuthorizationAPI.yaml</inputSpec>
-					<outputDirectory>${project.basedir}/openapi</outputDirectory>
+					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
 					<apiPackage>customer.cap_openapi.generated.authorization.api</apiPackage>
 					<modelPackage>customer.cap_openapi.generated.authorization.model</modelPackage>
 					<apiMaturity>released</apiMaturity>
 				</configuration>
-			</plugin>					
+			</plugin>		
+			<!-- <plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>3.5.0</version> 
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>${project.basedir}/openapi/customer/cap_openapi/generated</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>						 -->
 		</plugins>
 	</build>
 
