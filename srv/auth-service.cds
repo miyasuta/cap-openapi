@@ -1,8 +1,8 @@
-type RoleCollection {
+type SimpleRoleCollection {
     name: String;
     description: String; 
 }
 
 service AuthorizationService {
-    function getRoleCollections() returns array of  RoleCollection;
+    function getRoleCollections() returns array of  SimpleRoleCollection;
 }

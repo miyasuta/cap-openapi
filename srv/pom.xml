@@ -143,7 +143,6 @@
 			<plugin>
 				<groupId>com.sap.cloud.sdk.datamodel</groupId>
 				<artifactId>openapi-generator-maven-plugin</artifactId>
-				<!-- Maintain Maven property sap-cloud-sdk.version in your POM with the latest SAP Cloud SDK version -->
 				<version>${cloud.sdk.version}</version>
 				<executions>
 					<execution>
@@ -156,11 +155,11 @@
 				<configuration>
 					<inputSpec>${project.basedir}/api-specs/AuthorizationAPI.yaml</inputSpec>
 					<outputDirectory>${project.basedir}/openapi</outputDirectory>
-					<apiPackage>com.sap.cloud.sdk.generated.promopricing.authorization.api</apiPackage>
-					<modelPackage>com.sap.cloud.sdk.generated.promopricing.authorization.model</modelPackage>
+					<apiPackage>customer.cap_openapi.generated.authorization.api</apiPackage>
+					<modelPackage>customer.cap_openapi.generated.authorization.model</modelPackage>
 					<apiMaturity>released</apiMaturity>
 				</configuration>
-			</plugin>	
+			</plugin>					
 		</plugins>
 	</build>
 
