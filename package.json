@@ -10,6 +10,7 @@
   "scripts": {
     "build": "mbt build -t gen --mtar mtar.tar",
     "deploy": "cf deploy gen/mtar.tar",
-    "hybrid": "cds bind --exec mvn spring-boot:run"
+    "bind": "cds bind -2 cap-openapi-destination,cap-openapi-auth",
+    "run:hybrid": "cds bind --exec mvn spring-boot:run"
   }
 }
