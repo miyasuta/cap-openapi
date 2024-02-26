@@ -1,6 +1,6 @@
 @authurl=https://4395c46atrial.authentication.us10.hana.ondemand.com
 @clientId=sb-cap-openapi-4395c46atrial-dev!t230421
-@clientSecret=K9xODcRAfztUdjadpMLExYOK8aU=
+@clientSecret=
 @appurl=4395c46atrial-dev-cap-openapi-srv.cfapps.us10-001.hana.ondemand.com
 
 ### Get JWT token
