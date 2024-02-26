@@ -165,8 +165,8 @@
 				<configuration>
 					<inputSpec>${project.basedir}/api-specs/AuthorizationAPI.yaml</inputSpec>
 					<outputDirectory>${project.basedir}/src/gen/java</outputDirectory>
-					<apiPackage>customer.cap_openapi.generated.authorization.api</apiPackage>
-					<modelPackage>customer.cap_openapi.generated.authorization.model</modelPackage>
+					<apiPackage>customer.openapi.generated.authorization.api</apiPackage>
+					<modelPackage>customer.openapi.generated.authorization.model</modelPackage>
 					<apiMaturity>released</apiMaturity>
 				</configuration>
 			</plugin>		

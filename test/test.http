@@ -3,3 +3,14 @@
 ###
 GET {{server}}/odata/v4/AuthorizationService/getRoleCollections()
 
+###
+POST {{server}}/odata/v4/AuthorizationService/createRoleCollection
+Content-Type: application/json
+
+{
+    "roleCollection": {
+        "name": "MyTest1",
+        "description": "Created from BAS"
+    }
+}
+
